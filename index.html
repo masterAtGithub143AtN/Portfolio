@@ -50,7 +50,7 @@
         <div class="section_text">
             <p class="section_text_p1">Hello, I'm</p>
             <h1 class="title">Saket Suman</h1>
-            <p class="section_text_p2">Backend Developer</p>
+            <p class="section_text_p2">FullStack web Developer</p>
             <div class="btn-container">
                 <button class="btn btn-color-2" onclick="window.open('./assets/CV Resume.pdf')">Download CV</button>
                 <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
@@ -69,42 +69,40 @@
                 <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic">
             </div> -->
             <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="./assets/experience.png" alt="Experience icon" class="icon">
-                        <h3>Experience</h3>
-                        <p>2+ years <br/>Backend Developer</p>
-                    </div>
-                    <div class="details-container">
-                        <img src="./assets/education.png" alt="Experience icon" class="icon">
-                        <h3>Education</h3>
-                        <p>B.Tech undergraduate</p>
-                    </div>
-                </div>
                 <div class="text-container">
-                    <p>Lorem ipsum dolor sit amet 
-                    consectetur adipisicing elit.
-                     Praesentium laborum itaque quaerat
-                      ab voluptatibus ut vel ad debitis
-                       corrupti, explicabo eos animi at 
-                       temporibus. Modi delectus aut fugiat 
-                       labore a inventore praesentium sapien
-                       te autem quas quae rem, et perspiciat
-                       
-                       is numquam earum repellendus dignissi
-                       mos unde dolorum molestias maxime sun
-                       t corrupti consectetur.</p>
+                    <p>I'm Sket Suman, a 3rd year student at 
+                        Indian Institute of Technology Bhubaneswar 
+                        (IIT Bhubaneswar). I am a Full-Stack Web Developer 
+                         equipped with all the necessary skills for 
+                         Front-End and Back-End. I have knowledge of 
+                         HTML, CSS, Javascript in Front-End.
+                          I have knowledge of NodeJS, ExpressJS, SQL, PostgreSQL,
+                           RESTful APIs in Back-End. I also know ReactJS. I have a
+                            knowledge of few programming languages : C++(primary for
+                             Data Structures and Algorithms), Java and Python.
+                    </p>
                 </div>
             </div>
         </div>
         <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+    <section id="education">
+        <div class="about-containers">
+            <div class="details-container">
+                <img src="./assets/education.png" alt="Experience icon" class="icon">
+                <h3>Education</h3>
+                <h4>B.tech</h4>
+                <p>undergraduate at IIT BHUBANESWAR</p>
+                <h4>High school</h4>
+                <p>A.R.K HIGH +2 SCHOOL KUMHARSON,BEGUSARAI </p>
+            </div>
+        </div>
     </section>
     <section id="experience">
         <h1 class="title">Skills</h1>
         <div class="experience-details-container">
             <div class="about-containers">
                 <div class="details-container">
-                    <h2 class="experience-sub-title">Backend Developer</h2>
                     <div class="article-container">
                         <article>
                             <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
@@ -151,7 +149,6 @@
                     </div>
                 </div>
                 <div class="details-container">
-                    <h2 class="experience-sub-title">Backend Developer</h2>
                     <div class="article-container">
                         <article>
                             <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
@@ -258,14 +255,25 @@
         <div class="contact-info-upper-container">
             <div class="contact-info-container">
                 <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
-            <p><a href="mailto:12mdpur@gmail.com">12mdpur@gmail.com</a></p>
+            <p><a href="mailto:saketsuman1013@gmail.com">saketsuman1013@gmail.com</a></p>
             </div>
             <div class="contact-info-container">
                 <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
                 <p><a href="https://www.linkedin.com">LinkedIn</a></p>
             </div>
+            
         </div>
     </section>
+    <div id="contact-form">
+        <h3 class="section_text_p1">You can also contact me here</h3>
+        <form class="contact-info-upper-container" onsubmit="sendEmail(); reset(); return false;">
+            <input type="text" name="" id="name" placeholder="Your name" required>
+        <input type="email" name="" id="email" placeholder="Email id" required>
+        <textarea id="massage" rows="4" placeholder="Type your message"></textarea>
+        <button type="submit">Sumbmit</button>
+        </form>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

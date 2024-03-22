@@ -254,6 +254,12 @@ section {
     gap: 1rem;
 }   
 
+/* EDUCATION */
+
+#education{
+    padding-top: 8rem;
+}
+
 /* ABOUT SECTION */
 
 #about {
@@ -410,13 +416,40 @@ article .icon {
     height: 2.5rem;
 }
 
-/* FOOTER SECTION */
+/* CONTACT FORM */
 
-footer {
-    height: 26vh;
-    margin: 0 1rem;
+#contact-form{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
-footer p{
-    text-align: center;
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+form input, form textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: #f5f5f5;
+    font-size: 16px;
+}
+form button{
+    padding: 15px;
+    background: green;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
 }
